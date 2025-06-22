@@ -41,16 +41,11 @@ button:hover {
 /* Table styling */
 table {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 30px auto;
     border-collapse: collapse;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     background-color: white;
-}
-
-table thead {
-    background-color: #007bff;
-    color: white;
 }
 
 table th,
@@ -58,6 +53,14 @@ table td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 table tbody tr:hover {
@@ -68,13 +71,32 @@ table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-table th {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* Action buttons styling */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
-.table-container {
-    margin-top: 30px;
-    overflow-x: auto;
+.action-buttons button {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
 }
